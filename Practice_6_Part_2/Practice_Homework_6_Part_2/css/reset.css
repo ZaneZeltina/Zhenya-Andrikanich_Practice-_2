@@ -1,0 +1,54 @@
+/* CSS STYLE RESET */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	margin: 20px auto
+}
+
+/* END CSS STYLES RESET */

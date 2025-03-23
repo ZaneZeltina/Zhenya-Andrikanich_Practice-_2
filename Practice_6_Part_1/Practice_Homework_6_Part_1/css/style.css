@@ -1,0 +1,423 @@
+/* &display=swap&subset=cyrillic-ext */
+
+/* Connect Fonts with Google Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,italic,500,500italic,600,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,600,700,900&display=swap");
+
+/* Connect Fonts use local files */
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ------------- */
+
+body {
+	font-size: 21px;
+	background-color: #f5f5f5;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #4B4B4B;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.small__container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.header__block,
+.footer__block {
+  background-color: #a2a2a2;
+  box-shadow: 5px 5px 10px 5px #242424, inset 5px 5px 10px 3px #6495ed;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.header__title {
+	font-family: 'Proxima Nova Lt';
+	text-align: center;
+	color: #ff4444;
+	text-transform: uppercase;
+  text-decoration: underline;
+	font-size: 42px;
+	text-shadow: 3px 3px 5px #fff;
+	margin: 10px auto 25px;
+}
+
+.title {
+  display: inline;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2.27;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.17;
+  margin-bottom: 36px;
+  color: #02133c;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  margin-bottom: 54px;
+  padding-bottom: 260px;
+}
+
+.menu {
+	display: block;
+  text-align: center;
+}
+
+.menu__item {
+	display: inline-block;
+	font-size: 20px;
+	font-family: 'Proxima Nova Lt';
+	text-transform: uppercase;
+	margin: 10px;
+	padding: 5px;
+}
+
+.menu__link {
+	display: inline-block;
+	color: #ff4444;
+	text-shadow: 2px 2px 5px #fff;
+	box-shadow: 2px 2px 4px 2px #fff;
+	text-decoration: underline;
+	padding: 5px 20px;
+	border-radius: 20px;
+  background-color: #828282;
+}
+
+.menu__link:hover {
+	color: #fff;
+  text-shadow: 2px 2px 5px #fff;
+	text-decoration: underline;
+}
+
+.navigation {
+	margin: 20px auto;
+	width: 65px;
+}
+
+.about__wrapper {
+  padding: 100px 87px 0px;
+  background: #fff url("../img/task_1/about-bg.png") 100% 0% no-repeat;
+}
+
+.about__wrapper-bg {
+  min-height: 600px;
+}
+
+.about__wrapper-row {
+  font-size: 0;
+  margin: 0px 0px 33px 0px;
+}
+
+.about__wrapper-row-img {
+  margin: 0px 16px 0px 0px;
+}
+
+.about__img-wrapper {
+  text-align: center;
+  margin: -300px auto 108px;
+}
+
+.video {
+  background: url("../img/task_2/video-bg.jpg") 0 0 / 100% 100% no-repeat;
+  max-height: 498px;
+}
+
+.video__title {
+  color: #fff;
+  max-width: 411px;
+  padding-top: 112px;
+  margin-left: auto;
+}
+
+.video__image-wrapper {
+  margin-top: -30px;
+}
+
+.video__image-link {
+  display: inline-block;
+  margin: 0px 0px 120px 610px;
+  border-radius: 50%;
+  transition: background-color 0.7s ease-in-out;
+}
+
+.video__image-link:hover {
+  background-color: #ff535351;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.video__img {
+  width: 140px;
+  height: 140px;
+}
+
+.services {
+  position: relative;
+}
+
+.services__wrapper::before {
+  position: absolute;
+  content: "";
+  background: url("../img/task_3/services-bg.png") no-repeat;
+  top: 0;
+  left: 0;
+  width: 641px;
+  height: 450px;
+  z-index: 2;
+}
+
+.services__wrapper::after {
+  position: absolute;
+  content: "";
+  background: url("../img/task_3/services-bg-bottom.png") no-repeat;
+  bottom: 0;
+  right: 0;
+  width: 641px;
+  height: 450px;
+  z-index: 2;
+}
+
+.services__wrapper-row {
+  padding: 110px 0px 0px 0px;
+  margin: 0px 0px 33px 0px;
+}
+
+.services__wrapper-row-img {
+  margin: 0px 16px 0px 0px;
+	padding: 3px 0px 0px 0px;
+}
+
+.services__wrapper-row-title {
+  display: inline-block;
+  margin: 0px 0px 33px -11px;
+}
+
+.services__wrapper-row-subtitle {
+  margin: 0px 0px 78px 0px;
+}
+
+.services__card-row .services__card {
+  margin: 0px 24px 12px 0px;
+}
+
+.services__card-row .services__card:nth-child(3n + 3) {
+  margin: 0px 0px 0px 0px;
+}
+
+.services__card-row {
+  text-align: center;
+  font-size: 0;
+  margin: 0 auto 33px;
+  padding: 0px 0px 100px 0px;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  max-width: 324px;
+  max-height: 340px;
+  background-color: #fff;
+  text-align: center;
+  z-index: 4;
+  vertical-align: top;
+  transition: filter 0.7s ease-in-out;
+  filter: drop-shadow(0px 1px 1px rgba(38, 38, 38, 0.24)) drop-shadow(0px 1px 
+	2px rgba(38, 38, 38, 0.2));
+}
+
+.card:hover {
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+
+.card__wrapper {
+  padding: 50px 43px 50px 44px;
+}
+
+.card__img {
+  display: inline-block;
+  margin: 0px 0px 33px 0px;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 1.37;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.15px;
+}
+
+.services__button-wrapper-position {
+  text-align: center;
+  padding: 0px 0px 122px 0px;
+}
+
+.services__button-wrapper {
+  display: inline-block;
+  max-width: 450px;
+  background-image: linear-gradient(121deg, #910909 0%, #990000 75%, #ff0000 
+	100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.services__button-wrapper:hover {
+  background-position: 100% 50%;
+}
+
+.services__button-link {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px 20px 12px 30px;
+}
+
+.services__button-img {
+  margin: 3px 0px 0px 20px;
+}
+
+#task-4 {
+  background-color: #ececec;
+}
+
+.faq {
+  font-family: "Poppins", sans-serif;
+  padding: 19px 0px 1px 0px;
+  color: #000;
+}
+
+.faq__row .faq-small__title ~ .faq__text:last-child {
+  margin: 0px 0px 25px 0px;
+}
+
+.faq__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  margin: 0px 0px 26px 0px;
+}
+
+.faq__subtitle-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0px 0px 55px 0px;
+}
+
+.faq-small__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.62;
+  margin: 0px 0px 25px 0px;
+}
+
+.faq__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.62;
+  margin: 0px 0px 5px 0px;
+}
+
+.faq__text_margin {
+  margin: 0px 0px 25px 0px;
+}
+
+.faq__list {
+  padding: 0px 0px 0px 22px;
+}
+.faq__list-item:last-child {
+  margin: 0px 0px 25px 0px;
+}
+
+.faq__list-item {
+  list-style:lower-alpha;
+}
+
+.faq__list-item::marker {
+  font-size: 16px;
+}
+
+.computers {
+  background-color: #fff;
+}
+
+.computers__img {
+  max-width: 870px;
+  display: block;
+  padding: 50px 250px 50px 0px;
+}
+
+.about-us {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  color:#000;
+}
+
+.about-us__wrapper {
+  max-width: 870px;
+  padding: 0px 0px 0px 47px;;
+}
+
+.about-us__img {
+  padding: 60px 0px 0px 0px;
+}
+
+.about-us__title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.32;
+  max-width: 465px;
+}
+
+.about-us__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.44;
+  max-width: 436px;
+  padding: 0px 0px 50px 0px;
+}
+
