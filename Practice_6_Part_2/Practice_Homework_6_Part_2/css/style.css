@@ -120,7 +120,7 @@ body {
   transition: background-color 0.7s ease-in-out;
 }
 
-.card__link {
+.link {
 	font-size: 16px;
 	line-height: 1.69;
 	letter-spacing: 0.15px;
@@ -128,7 +128,7 @@ body {
 	transition: color 0.4s ease-in-out;
 }
 
-.card__link:hover {
+.link:hover {
 	color: #f78434;
 }
 
@@ -222,7 +222,7 @@ body {
 
 .cleveland__card-author {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 600;
 	margin: 0px 0px 5px 0px;
 }
 
@@ -246,7 +246,7 @@ body {
 
 .choose__card:hover > h3,
 .choose__card:hover > p {
-	background-color: #000;
+	color: #000;
 }
 
 .choose__card:hover > .choose__line {
@@ -267,4 +267,71 @@ body {
 	height: 2px;
 	background-color: #34c759;
 	margin: 0px 0px 24px 0px;
+}
+
+.choose__text {
+	font-size: 13px;
+	line-height: calc(18 / 13 * 100%);
+  letter-spacing: -0.1525px;
+  color: #ffffff80;
+}
+
+.meal {
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 400;
+}
+
+.meal__card {
+	max-width: 350px;
+	background: #252525;
+	margin: 30px auto;
+	border-radius: 30px;
+}
+
+.meal__card-content {
+	padding: 30px 20px;
+}
+
+.meal__title {
+	font-size: 32px;
+	line-height: 30px;
+	color: #d9d9d9;
+}
+
+.meal__subtitle {
+	font-size: 12px;
+	color: #85878c;
+	line-height: 18px;
+	letter-spacing: -0.16px;
+	margin: 0px 0px 18px 0px;
+}
+
+.meal__text {
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.16px;
+  color: #85878c;
+  margin: 0px 0px 18px 0px;
+}
+
+.meal__img {
+	border-radius: 30px 30px 0px 0px;
+}
+
+.meal-stars__wrapper {
+	display: inline-block;
+	max-width: 120px;
+	margin: 0px 10px 0px 0px;
+	cursor: pointer;
+}
+
+.stars__rating {
+	display: inline-block;
+	position: relative;
+	bottom: 2px;
+	font-size: 12px;
+	font-weight: 900;
+	letter-spacing: 1.2px;
+	color: #b3b3b5;
+	margin: 0px 30px 0px 0px;
 }
