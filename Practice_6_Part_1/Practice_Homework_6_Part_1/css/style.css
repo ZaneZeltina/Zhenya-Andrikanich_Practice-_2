@@ -1,4 +1,3 @@
-/* &display=swap&subset=cyrillic-ext */
 
 /* Connect Fonts with Google Fonts plugin*/
 
@@ -84,11 +83,11 @@
 
 body {
   font-size: 21px;
+  line-height: 1.2;
   background-color: #f5f5f5;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  line-height: 1.2;
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 
 .container {
@@ -101,13 +100,43 @@ body {
   margin: 0 auto;
 }
 
+/* ------------------------- */
+
 .header-block,
 .footer-block {
-  background-color: #a8a8a8;
-  box-shadow: 5px 5px 10px 5px #242424, inset 5px 5px 10px 3px #6495ed;
-  border-radius: 40px;
+  background-color: #afafaf;
+  box-shadow: 5px 5px 10px 5px #242424, inset 5px 5px 8px 4px #fff;
+  border-radius: 30px;
   padding: 20px;
-  margin: 25px 0px;
+  margin: 30px 0px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.item {
+  background-color: #909090;
+  box-shadow: 3px 3px 4px 3px #6495ed, inset 3px 3px 4px 2px #fff;
+  border-radius: 30px;
+  margin: 10px 5px 5px;
+  padding: 7px 20px;
+}
+
+.link {
+  color: #ff4444;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px #fff;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.5s ease-in-out;
 }
 
 .page__title {
@@ -115,17 +144,21 @@ body {
   text-align: center;
   color: #ff4444;
   text-transform: uppercase;
-  text-decoration: underline;
-  font-size: 52px;
-  font-weight: 500;
-  text-shadow: 4px 4px 5px #fff;
-  margin: 0px 0px 20px 0px;
+  font-size: 56px;
+  font-weight: 700;
+  text-shadow: 4px 4px 4px #fff;
+  margin: 0px 0px 15px 0px;
+}
+
+.navigation {
+  margin: 20px auto 10px;
+  max-width: 65px;
 }
 
 .title {
   display: inline;
-  font-size: 12px;
   text-transform: uppercase;
+  font-size: 12px;
   font-weight: 700;
   line-height: 2.27;
 }
@@ -146,42 +179,11 @@ body {
   padding-bottom: 260px;
 }
 
-.list {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.item {
-  background-color: #919091;
-  box-shadow: 3px 3px 5px 3px #fff;
-  border-radius: 30px;
-  margin: 10px 5px 5px;
-  padding: 5px 15px;
-}
-
-.link {
-  color: #ff4444;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 3px #fff;
-}
-
-.link:hover {
-  color: #fff;
-  text-decoration: underline;
-  transition: color 0.5s ease-in-out;
-}
-
 .logo {
   margin: 0px 16px 0px 0px;
 }
 
-.navigation {
-  margin: 20px auto 10px;
-  max-width: 65px;
-}
+/* --- who-we-are --- */
 
 .who-we-are__wrapper {
   padding: 100px 87px 0px;
@@ -199,8 +201,10 @@ body {
 
 .who-we-are__img-wrapper {
   text-align: center;
-  margin: -300px auto 108px;
+  margin: -300px auto 100px;
 }
+
+/* --- video --- */
 
 .video {
   background: url('../img/task_2/video-bg.jpg') 0 0 / 100% 100% no-repeat;
@@ -222,28 +226,30 @@ body {
   display: inline-block;
   border-radius: 50%;
   margin: 0px 0px 120px 610px;
-  transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .video-icon__link:hover {
-  background-color: #ff535351;
+  background-color: rgba(255, 68, 68, 0.4);
   border-radius: 50%;
   width: 140px;
   height: 140px;
 }
 
-.video__img {
+.video-icon__img {
   width: 140px;
   height: 140px;
 }
+
+/* --- services --- */
 
 .services {
   position: relative;
 }
 
 .services__wrapper::before {
-  position: absolute;
   content: '';
+  position: absolute;
   background: url('../img/task_3/services-bg.png') no-repeat;
   top: 0;
   left: 0;
@@ -253,8 +259,8 @@ body {
 }
 
 .services__wrapper::after {
-  position: absolute;
   content: '';
+  position: absolute;
   background: url('../img/task_3/services-bg-bottom.png') no-repeat;
   bottom: 0;
   right: 0;
@@ -270,7 +276,7 @@ body {
 
 .services__wrapper-row-img {
   margin: 0px 16px 0px 0px;
-	padding: 3px 0px 0px 0px;
+  padding: 3px 0px 0px 0px;
 }
 
 .services__title {
@@ -304,8 +310,8 @@ body {
   max-height: 340px;
   background-color: #fff;
   text-align: center;
-  z-index: 4;
   vertical-align: top;
+  z-index: 4;
   transition: filter 0.7s ease-in-out;
   filter: drop-shadow(0px 1px 1px rgba(38, 38, 38, 0.24)) drop-shadow(0px 1px 
 	2px rgba(38, 38, 38, 0.2));
@@ -333,22 +339,22 @@ body {
 }
 
 .card__text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.15px;
 }
 
 .services__button-wrapper {
   text-align: center;
-  padding: 0px 0px 122px 0px;
+  padding: 0px 0px 112px 0px;
 }
 
 .services__button {
   position: relative;
   z-index: 4;
   display: inline-block;
-  padding: 12px 0px 12px 0px;
+  padding: 12px 0px;
   width: 211px;
   height: 48px;
   background: #c40b0b url('../img/task_3/button__arrow.png') 100% 50% no-repeat;
@@ -366,23 +372,22 @@ body {
   font-size: 12px;
   font-weight: 900;
   color: #fff;
-  line-height: 20px;
   text-transform: uppercase;
+  line-height: 20px;
   letter-spacing: 0.15px;
 }
 
-#task_4 {
-  background-color: #ececec;
-}
+/* --- faq --- */
 
 .faq {
+  background-color: #ececec;
   font-family: 'Poppins', sans-serif;
-  padding: 30px 0px 10px;
-  margin: 0px 0px 30px 0px;
   color: #000;
+  margin: 0px 0px 30px 0px;
+  padding: 30px 0px 10px;
 }
 
-.faq__row .faq__small-title ~ .faq__text:last-child {
+.faq__row .faq__small-title ~.faq__text:last-child {
   margin: 0px 0px 25px 0px;
 }
 
@@ -390,15 +395,15 @@ body {
   font-size: 32px;
   font-weight: 600;
   line-height: 1.5;
-  margin: 0px 0px 26px 0px;
+  margin: 0px 0px 25px 0px;
 }
 
 .faq__subtitle {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.5;
-  text-transform: uppercase;
   margin: 0px 0px 55px 0px;
+  text-transform: uppercase;
 }
 
 .faq__small-title {
@@ -433,13 +438,15 @@ body {
 
 .faq__list-item::marker {
   font-size: 16px;
-  color:#e40b0b;
   font-weight: 600;
+  color: #e40b0b;
 }
 
 .faq__list-text {
   padding: 0px 0px 0px 5px;
 }
+
+/* --- computers --- */
 
 .computers {
   background-color: #fff;
@@ -449,11 +456,13 @@ body {
 .computers__img {
   display: block;
   max-width: 870px;
-  margin: 0px 0px 0px -170px;
+  margin: 0px 0px 0px -185px;
 }
 
+/* --- about-us --- */
+
 .about-us {
-  background: #fff;
+  background-color: #fff;
   color: #000;
   font-family: 'Poppins', sans-serif;
 }
@@ -468,15 +477,15 @@ body {
 }
 
 .about-us__title {
-  font-weight: 500;
   font-size: 44px;
+  font-weight: 500;
   line-height: 1.32;
   max-width: 465px;
 }
 
 .about-us__text {
-  font-weight: 300;
   font-size: 18px;
+  font-weight: 300;
   line-height: 1.44;
   max-width: 436px;
   padding: 0px 0px 50px 0px;
