@@ -1,9 +1,9 @@
 
 /* Connect Fonts with Google Fonts plugin*/
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:regular,italic,500,500italic,600,700,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,italic,500,500italic,600,700,900&display=swap');
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,600,700,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500,600,700,900&display=swap');
 
 /* Connect Fonts use local files */
 
@@ -79,7 +79,7 @@
     font-display: swap;
 }
 
-/* ------------------------ */
+/* --- important selectors --- */
 
 body {
   font-size: 21px;
@@ -100,7 +100,7 @@ body {
   margin: 0 auto;
 }
 
-/* ------------------------- */
+/* --- header and footer --- */
 
 .header-block,
 .footer-block {

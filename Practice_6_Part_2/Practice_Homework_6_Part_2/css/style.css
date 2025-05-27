@@ -1,10 +1,175 @@
-/* &display=swap&subset=cyrillic-ext */
+/* --- Connect Fonts with Google Fonts --- */
 
-/* Connect Fonts with Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300italic,regular,italic,500,500italic,700,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600,700,900,300italic,italic,500italic,700italic&display=swap');
 
-/* Connect Fonts use local files */
+/* --- Connect Fonts use local files --- */
 
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeue.woff2') format('woff2'),
+    url('../fonts/HelveticaNeue.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* ------------- */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeue-Black.woff2') format('woff2'),
+    url('../fonts/HelveticaNeue-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lorenzo Sans';
+  src: url('../fonts/LorenzoSans-Regular.woff2') format('woff2'),
+    url('../fonts/LorenzoSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lorenzo Sans';
+  src: url('../fonts/LorenzoSans-Italic.woff2') format('woff2'),
+    url('../fonts/LorenzoSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lorenzo Sans';
+  src: url('../fonts/LorenzoSans-Medium.woff2') format('woff2'),
+    url('../fonts/LorenzoSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lorenzo Sans';
+  src: url('../fonts/LorenzoSans-MediumItalic.woff2') format('woff2'),
+    url('../fonts/LorenzoSans-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lorenzo Sans';
+  src: url('../fonts/LorenzoSans-Bold.woff2') format('woff2'),
+    url('../fonts/LorenzoSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lorenzo Sans';
+  src: url('../fonts/LorenzoSans-BoldItalic.woff2') format('woff2'),
+    url('../fonts/LorenzoSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- important selectors --- */
+
+body {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #d5d5d5;
+  color: #323232;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto 30px;
+}
+
+/* --- header and footer --- */
+
+.header-block,
+.footer-block {
+  background-color: #e8b5b5;
+  box-shadow: 5px 5px 10px 5px #404040, inset 5px 5px 10px 3px #fff;
+  border-radius: 40px;
+  padding: 30px 0px;
+}
+
+.page__title {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #6d99d6;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 46px;
+  text-shadow: 4px 4px 6px #fff;
+  margin: 10px auto 30px;
+}
+
+.menu {
+  margin: 10px auto;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.item {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.link {
+  background-color: #c18383;
+  color: #dc143c;
+  text-shadow: 2px 2px 5px #fff;
+  box-shadow: inset 2px 2px 4px 1px #fff, 2px 2px 4px 1px #404040;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+
+.link:hover {
+  color: #6d99d6;
+  background-color: #fff;
+  text-decoration: underline;
+  transition: background-color 0.7s ease-in-out;
+}
+
+.navigation {
+  margin: 25px auto -10px;
+  max-width: 60px;
+}
+
+/* --- use often selectors --- */
 
