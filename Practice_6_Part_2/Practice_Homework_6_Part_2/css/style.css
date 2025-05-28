@@ -109,7 +109,7 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 20px auto 30px;
+  margin: 0px auto 30px;
 }
 
 /* --- header and footer --- */
@@ -173,3 +173,242 @@ body {
 
 /* --- use often selectors --- */
 
+.button {
+  display: inline-block;
+  font-weight: 700;
+  color: #fff;
+  background-color: #f78434;
+  padding: 21px 41px;
+  border-radius: 29px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #f78434;
+  transition: background-color 0.7s ease-in-out;
+  border: 2px solid #f78434;
+  padding: 19px 39px;
+}
+
+/* --- continue CSS --- */
+
+.space,
+.sale,
+.cleveland,
+.choose,
+.meal {
+  margin: 0px auto 30px;
+  padding: 30px 0px;
+  background-color: #dbdbdb;
+  border-radius: 30px;
+  box-shadow: 3px 3px 6px 3px #636363, inset 3px 3px 6px 3px #fff;
+}
+
+.space__row,
+.sale__row {
+  max-width: 474px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 3px 3px 6px 3px #535353;
+  padding: 30px;
+  text-align: center;
+}
+
+.sale__row {
+  max-width: 540px;
+}
+
+.space__title,
+.sale__title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  color: #323232;
+  margin: 0px 0px 20px 0px;
+}
+
+.space__text,
+.sale__text,
+.cleveland__card-text {
+  line-height: 1.6;
+  letter-spacing: 1.15px;
+  margin: 0px 0px 20px 0px;
+}
+
+.sale__img-wrapper {
+  margin: 0px auto 20px;
+}
+
+/* --- cleveland --- */
+
+.cleveland__card {
+  max-width: 350px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 3px 3px 6px 3px #535353;
+}
+
+.cleveland__img {
+  border-radius: 30px 30px 0px 0px;
+}
+
+.cleveland__card-content {
+  padding: 30px;
+}
+
+.cleveland__card-text {
+  margin: 0px 0px 30px 0px;
+}
+
+.cleveland__card-author {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+}
+
+.cleveland__link {
+  font-size: 16px;
+  line-height: 1.69;
+  letter-spacing: 0.15px;
+  color: #58bebf;
+  transition: color 0.5s ease-in-out;
+}
+
+.cleveland__link:hover {
+  color: #f78434;
+}
+
+/* --- choose --- */
+
+.choose {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+.choose__card {
+  max-width: 255px;
+  margin: 0 auto;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 34px 24px 60px;
+}
+
+.choose__card:hover {
+  background-color: #34c759;
+  transition: background-color 0.7s ease-in-out;
+}
+
+.choose__card:hover>h3,
+.choose__card:hover>p {
+  color: #000;
+}
+
+.choose__card:hover>.choose__line {
+  background-color: #000;
+}
+
+.choose__title {
+  color: #fff;
+  font-size: 22px;
+  line-height: calc(26 / 22 * 100%);
+  letter-spacing: -0.275px;
+  text-transform: capitalize;
+  margin: 0px 0px 10px 0px;
+}
+
+.choose__line {
+  max-width: 56px;
+  height: 2px;
+  background-color: #34c759;
+  margin: 0px 0px 24px 0px;
+}
+
+.choose__text {
+  font-size: 13px;
+  line-height: calc(18 / 13 * 100%);
+  letter-spacing: -0.1525px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- meal --- */
+
+.meal {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+.meal__card {
+  max-width: 350px;
+  background: #252525;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.meal__card-content {
+  padding: 30px 20px;
+}
+
+.meal__title {
+  font-size: 32px;
+  line-height: 30px;
+  color: #d9d9d9;
+}
+
+.meal__subtitle {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0px 0px 18px 0px;
+  color: #85878c;
+}
+
+.meal__text {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.16px;
+  color: #85878c;
+  margin: 0px 0px 18px 0px;
+}
+
+.meal__img {
+  border-radius: 30px 30px 0px 0px;
+}
+
+.meal__stars-wrapper {
+  display: inline-block;
+  max-width: 120px;
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+}
+
+.stars__rating {
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  margin: 0px 30px 0px 0px;
+  color: #b3b3b5;
+}
+
+.meal__button {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #ffffff80;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #252525;
+  border: 1px solid #303030;
+  border-radius: 30px;
+  transition: background-color 0.7s ease-in-out;
+}
+
+.meal__button:hover {
+  color: #252525;
+  background-color: #34c759;
+}
